@@ -1,6 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 
 const Form = () => {
+  let initialState = {
+    firstName: '',
+    lastName: '',
+  }
+  const [formInputs, setFormInputs] = useState(initialState);
   return (
     <div className="container">
       <div
@@ -35,7 +40,8 @@ const Form = () => {
                 className="form-input"
                 type="text"
                 name="fname"
-                value=""
+                value={formInputs.firstName}
+                onChange={(e)=>setFormInputs({...formInputs, firstName: e.target.value})}
                 required
               />
 
