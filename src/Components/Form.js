@@ -24,9 +24,9 @@ const Form = () => {
             padding: "1% 2% 0 6%",
           }}
         >
-          <h2 style={{ textAlign: "left" }}>Personal Information:</h2>
+          <h2 style={{ textAlign: "left",paddingLeft:'3%' }}>Personal Information:</h2>
 
-          <div style={{ paddingLeft: "10%" }}>
+          <div style={{ paddingLeft: "15%" }}>
             <div>
               <p className="para">First Name: </p>
               <input
@@ -38,7 +38,7 @@ const Form = () => {
               />
 
               <p
-                style={{ marginRight: "10px", marginLeft: "10%" }}
+                style={{ marginRight: "10px", marginLeft: "20%" }}
                 className="para"
               >
                 Last Name:
@@ -48,6 +48,9 @@ const Form = () => {
             <div>
               <p className="para">UID:</p>
               <input className="form-input" type="text" name="" value="" />
+              <p className="para" style={{ marginRight: "10px", marginLeft: "20%" }}>Email:</p>
+              <input className="form-input" type="text" name="" value="" />
+
             </div>
             <div>
               <p className="para">Address 1:</p>
@@ -68,7 +71,7 @@ const Form = () => {
               <input className="form-input" type="text" name="" value="" />
               {/* </div>
           <div> */}
-              <p className="para" style={{ marginLeft: "10%" }}>
+              <p className="para" style={{ marginRight: "10px", marginLeft: "20%" }}>
                 State:
               </p>
               <input className="form-input" type="text" name="" value="" />
@@ -82,8 +85,10 @@ const Form = () => {
           <hr />
 
           <div className="horizontal-2">
-            <h2 style={{ textAlign: "left" }}>Research Information:</h2>
-            <div>
+            <h2 style={{ textAlign: "left",paddingLeft:'3%' }}>Research Information:</h2>
+            
+            <div style={{ paddingLeft: "15%" }}>
+            <div >
               <p className="para">Subject of your research: </p>
               <textarea
                 className="form-input"
@@ -115,6 +120,7 @@ const Form = () => {
                 required
               />
             </div>
+            </div>
           </div>
           <hr />
 
@@ -125,14 +131,16 @@ const Form = () => {
                 marginBottom: "0",
                 paddingTop: "0",
                 margin: "0",
+                paddingLeft:'3%'
               }}
             >
               Expense Information:
             </h2>
-            <p>
+            <p style = {{paddingLeft:'3%'}}>
               (Transportation, Lodging, Conference,Registration Only - Actual or
               Estimated)
             </p>
+            <div style={{ paddingLeft: "15%" }}>
             <div>
               <p className="para">Subject of your research: </p>
               <textarea className="form-input" type="text" name="" value="" />
@@ -170,6 +178,7 @@ const Form = () => {
               <p className="para">TOTAL EXPENSES:</p>
               <input className="form-input" type="text" name="" value="" />
             </div>
+            </div>
           </div>
           <hr />
           <div className="horizontal-4">
@@ -206,14 +215,6 @@ const Form = () => {
                 </div>
               </div>
             </div>
-            {/* <label>Yes</label>
-          <input  classNmae = "from-input"type="radio" value = 'No'/>
-          </div>
-          <div>
-          <label>No</label>
-          <input  type="radio" value = 'No'/>
-          </div>
-          </div> */}
             <div>
               <p className="para">Name of Organiastion</p>
               <input className="form-input" type="text" value="" />
@@ -234,8 +235,8 @@ const Form = () => {
             </div>
           </div>
 
-          <div className="footer">
-            <div>
+          <div className="footer" style={{paddingTop:'10px',paddingLeft:'40px'}}>
+            <div >
               <button className="btn">Submit</button>
             </div>
             <div>
