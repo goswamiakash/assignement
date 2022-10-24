@@ -13,10 +13,9 @@ const Form = () => {
           <div>
           <p className='para'>First Name: </p>
           <input  className = 'form-input' type="text"name =  'fname' value = "" required/>
-          {/* </div> */}
-        {/* <div> */}
+          
 
-          <p style = {{marginRight:'10px'}}className='para'>Last Name:</p>
+          <p style = {{marginRight:'10px', marginLeft:'10%'}}className='para'>Last Name:</p>
           <input  className = 'form-input' type="text"name =  '' value = ""/>
           </div>
           <div>
@@ -36,7 +35,7 @@ const Form = () => {
           <input  className = 'form-input' type="text"name =  '' value = ""/>
           {/* </div>
           <div> */}
-          <p className='para'>State:</p>
+          <p className='para' style={{marginLeft: '10%'}}>State:</p>
           <input  className = 'form-input' type="text"name =  '' value = ""/>
           </div>
           <div>
