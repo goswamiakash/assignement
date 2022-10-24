@@ -5,12 +5,14 @@
 .para{
   width:100px;
   display: inline-flex;
+  
 
 }
 .footer{
   background-color: skyblue;
   height:50px;
   display: flex;
+  margin:0
   
 }
 hr {

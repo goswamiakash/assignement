@@ -24,7 +24,7 @@ const Form = () => {
             padding: "1% 2% 0 6%",
           }}
         >
-          <h2 style={{ textAlign: "left",paddingLeft:'3%' }}>Personal Information:</h2>
+          <h2 style={{ textAlign: "left", paddingLeft: '3%' }}>Personal Information:</h2>
 
           <div style={{ paddingLeft: "15%" }}>
             <div>
@@ -85,41 +85,41 @@ const Form = () => {
           <hr />
 
           <div className="horizontal-2">
-            <h2 style={{ textAlign: "left",paddingLeft:'3%' }}>Research Information:</h2>
-            
+            <h2 style={{ textAlign: "left", paddingLeft: '3%' }}>Research Information:</h2>
+
             <div style={{ paddingLeft: "15%" }}>
-            <div >
-              <p className="para">Subject of your research: </p>
-              <textarea
-                className="form-input"
-                type="text"
-                name=""
-                value=""
-                textarea
-              />
-            </div>
-            <div>
-              <p className="para">Research Instiatution to be visited:</p>
-              <input className="form-input" type="text" name="" value="" />
-            </div>
-            <div>
-              <p className="para">Travel Start Date:</p>
-              <input className="form-input" type="text" name="" value="" />
-            </div>
-            <div>
-              <p className="para">Travel End Date:</p>
-              <input className="form-input" type="text" name="" value="" />
-            </div>
-            <div>
-              <p className="para">Addres 2:</p>
-              <input
-                className="form-input"
-                type="text"
-                name=""
-                value=""
-                required
-              />
-            </div>
+              <div >
+                <p className="para">Subject of your research: </p>
+                <textarea
+                  className="form-input"
+                  type="text"
+                  name=""
+                  value=""
+                  textarea
+                />
+              </div>
+              <div>
+                <p className="para">Research Instiatution to be visited:</p>
+                <input className="form-input" type="text" name="" value="" />
+              </div>
+              <div>
+                <p className="para">Travel Start Date:</p>
+                <input className="form-input" type="text" name="" value="" />
+              </div>
+              <div>
+                <p className="para">Travel End Date:</p>
+                <input className="form-input" type="text" name="" value="" />
+              </div>
+              <div>
+                <p className="para">Addres 2:</p>
+                <input
+                  className="form-input"
+                  type="text"
+                  name=""
+                  value=""
+                  required
+                />
+              </div>
             </div>
           </div>
           <hr />
@@ -131,59 +131,63 @@ const Form = () => {
                 marginBottom: "0",
                 paddingTop: "0",
                 margin: "0",
-                paddingLeft:'3%'
+                paddingLeft: '3%'
               }}
             >
               Expense Information:
             </h2>
-            <p style = {{paddingLeft:'3%'}}>
+            <p style={{ paddingLeft: '3%' }}>
               (Transportation, Lodging, Conference,Registration Only - Actual or
               Estimated)
             </p>
             <div style={{ paddingLeft: "15%" }}>
-            <div>
-              <p className="para">Subject of your research: </p>
-              <textarea className="form-input" type="text" name="" value="" />
-            </div>
-            <div>
-              <p className="para">Cost of Airfare:</p>
-              <input className="form-input" type="text" name="" value="" />
-            </div>
-            <div>
-              <p className="para">Cost of Car Rental:</p>
-              <input className="form-input" type="text" name="" value="" />
-            </div>
-            <div>
-              <p className="para">Cost of Lodging:</p>
-              <input className="form-input" type="text" name="" value="" />
-            </div>
-            <div>
-              <p className="para">Cost of other Ground Transportation:</p>
-              <input className="form-input" type="text" name="" value="" />
-            </div>
-            <div>
-              <p className="para">Cost of other Expense(s):</p>
-              <input className="form-input" type="text" name="" value="" />
-            </div>
-            <div>
-              <p className="para">Description of other Expense(s):</p>
-              <textarea
-                className="form-input"
-                type="textarea"
-                name=""
-                value=""
-              />
-            </div>
-            <div>
-              <p className="para">TOTAL EXPENSES:</p>
-              <input className="form-input" type="text" name="" value="" />
-            </div>
+              <div>
+                <p className="para">Subject of your research: </p>
+                <textarea className="form-input" type="text" name="" value="" />
+              </div>
+              <div>
+                <p className="para">Cost of Airfare:</p>
+                <input className="form-input" type="text" name="" value="" />
+              </div>
+              <div>
+                <p className="para">Cost of Car Rental:</p>
+                <input className="form-input" type="text" name="" value="" />
+              </div>
+              <div>
+                <p className="para">Cost of Lodging:</p>
+                <input className="form-input" type="text" name="" value="" />
+              </div>
+              <div>
+                <p className="para">Cost of other Ground Transportation:</p>
+                <input className="form-input" type="text" name="" value="" />
+              </div>
+              <div>
+                <p className="para">Cost of other Expense(s):</p>
+                <input className="form-input" type="text" name="" value="" />
+              </div>
+              <div>
+                <p className="para">Description of other Expense(s):</p>
+                <textarea
+                  className="form-input"
+                  type="textarea"
+                  rows='5'
+                  cols = '20'
+                  name=""
+                  value=""
+                />
+              </div>
+              <div>
+                <p className="para">TOTAL EXPENSES:</p>
+                <input className="form-input" type="text" name="" value="" />
+              </div>
             </div>
           </div>
           <hr />
+
           <div className="horizontal-4">
-            <h2 style={{ textAlign: "left" }}>Additional Information:</h2>
-            <div style={{ display: "flex", flexFlow: "row wrap" }}>
+            <h2 style={{ textAlign: "left",paddingLeft:'3%' }}>Additional Information:</h2>
+            <div style={{paddingLeft:'15%'}}>
+            <div style={{ display: "flex", flexFlow: "row wrap"}}>
               <p className="para">
                 I have applied to another organization fro funding
               </p>
@@ -220,22 +224,75 @@ const Form = () => {
               <input className="form-input" type="text" value="" />
             </div>
             <div>
-              <p style={{ width: "100" }} className="para">
+              <p className="para">
                 Funding received?
               </p>
-              <input className="form-input" type="radio" name="" />
-              <label className="para">Yes</label>
-              <input className="form-input" type="radio" name="" />
-              <br />
+              <div
+                style={{
+                  display: "flex",
+                  flexFlow: "column wrap",
+                  justifyContent: "space-evenly",
+                }}
+              >
+                <div style={{ display: "flex", flexFlow: "row wrap" }}>
+                  <input
+                    id="funding-yes"
+                    name="funding"
+                    type="radio"
+                    className="form-input"
+                    value="Yes"
+                  />
+                  <label htmlFor="funding-yes">Yes</label>
+                </div>
+                <div style={{ display: "flex", flexFlow: "row wrap" }}>
+                  <input
+                    id="funding-no"
+                    name="funding"
+                    className="form-input"
+                    type="radio"
+                    value="No"
+                  />
+                  <label htmlFor="funding-no">No</label>
+                </div>
+                <div style={{ display: 'flex', flexflow: 'row wrap' }}>
+                  <input
+                    id="funding-no"
+                    name="funding"
+                    className="form-input"
+                    type="radio"
+                    value="No"
+                  />
+                  <label htmlFor="funding-no">Don't know yet</label>
+                </div>
+                <div>
+                  <p className="para">
+                    Other amount received:
+                  </p >
+                  <div>
+                    <input className="form-input" type="text" name="" value='' />
+                  </div>
+                </div>
+                <div>
+                  <p className="para">Note: hhcsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p>
+                </div>
+                <div>
+                  <p className="para">
+                    Additional comments:
+                  </p>
+                  <div>
+                    <textarea  className="form-input" name="" id="" cols="30" rows="5"></textarea>
+                  </div>
+                </div>
+              </div>
 
-              <label>No</label>
-              <input className="form-input" type="radio" name="" />
-
-              <label>Do'nt know yet</label>
             </div>
+
+            </div>
+
+
           </div>
 
-          <div className="footer" style={{paddingTop:'10px',paddingLeft:'40px'}}>
+          <div className="footer" style={{ paddingTop: '10px', paddingLeft: '40px', paddingTop: '10px' }}>
             <div >
               <button className="btn">Submit</button>
             </div>
