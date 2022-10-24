@@ -26,7 +26,7 @@ const Form = () => {
         >
           <h2 style={{ textAlign: "left" }}>Personal Information:</h2>
 
-          <div style={{paddingLeft: '10%'}}>
+          <div style={{ paddingLeft: "10%" }}>
             <div>
               <p className="para">First Name: </p>
               <input
@@ -174,11 +174,37 @@ const Form = () => {
           <hr />
           <div className="horizontal-4">
             <h2 style={{ textAlign: "left" }}>Additional Information:</h2>
-            <div>
+            <div style={{ display: "flex", flexFlow: "row wrap" }}>
               <p className="para">
                 I have applied to another organization fro funding
               </p>
-              <input className="form-input" type="radio" value="Yes" />
+              <div
+                style={{
+                  display: "flex",
+                  flexFlow: "column wrap",
+                  justifyContent: "space-evenly",
+                }}
+              >
+                <div style={{ display: "flex", flexFlow: "row wrap" }}>
+                  <input
+                    id="funding-yes"
+                    name="funding"
+                    type="radio"
+                    value="Yes"
+                  />
+                  <label htmlFor="funding-yes">Yes</label>
+                </div>
+
+                <div style={{ display: "flex", flexFlow: "row wrap" }}>
+                  <input
+                    id="funding-no"
+                    name="funding"
+                    type="radio"
+                    value="No"
+                  />
+                  <label htmlFor="funding-no">No</label>
+                </div>
+              </div>
             </div>
             {/* <label>Yes</label>
           <input  classNmae = "from-input"type="radio" value = 'No'/>
